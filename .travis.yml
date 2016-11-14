@@ -8,17 +8,19 @@ addons:
 script: "RAILS_ENV=test bundle exec rake"
 
 before_script:
- - sudo service postgresql start
- - cd pesquini/
- - gem install rspec rspec-rails simplecov
- - bundle install
- - rake db:setup
+  - sudo service postgresql start
+  - cd pesquini/
+  - gem install rspec rspec-rails simplecov
+  - bundle install
+  - psql -c 'create database pesquini_test;' -U postgres;
+  - psql -c 'create user pesquini;' -U postgres;
+  - rake db:setup
 
- bundler_args: --binstubs=./bundler_stubs
+bundler_args: --binstubs=./bundler_stubs
 
- sudo: required
+sudo: required
 
- notifications:
+notifications:
   email:
     recipients:
       - adailson2@gmail.com
