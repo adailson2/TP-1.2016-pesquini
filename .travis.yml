@@ -9,7 +9,7 @@ script: "RAILS_ENV=test bundle exec rake"
 
 before_script:
  - sudo service postgresql start
- - cd TP-1.2016-pesquini/
+ - cd pesquini/
  - gem install rspec rspec-rails simplecov
  - bundle install
  - rake db:setup
