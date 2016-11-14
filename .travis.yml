@@ -12,7 +12,6 @@ before_script:
   - cd pesquini/
   - gem install rspec rspec-rails simplecov
   - bundle install
-  - sudo su
   - psql -c 'create database pesquini_test;' -U postgres;
   - psql -c 'create user pesquini;' -U postgres;
   - rake db:migrate
