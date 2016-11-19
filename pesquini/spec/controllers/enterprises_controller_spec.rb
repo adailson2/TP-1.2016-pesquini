@@ -40,17 +40,17 @@ RSpec.describe EnterprisesController, :type => :controller do
     
     end
 
-    describe "#show_page_number" do 
+    #describe "#show_page_number" do 
 
-      describe "with a registered enterprise" do
+    #  describe "with a registered enterprise" do
 
-        it "should work" do
-          get :show_page_number, :page => @page_number
-          expect( response ).to have_http_status( :success )
-        end
+     #   it "should work" do
+      #    get :show_page_number, :page => @page_number
+      #    expect( response ).to have_http_status( :success )
+      #  end
 
-      end
-    end 
+      #end
+    #end 
   
   end
 

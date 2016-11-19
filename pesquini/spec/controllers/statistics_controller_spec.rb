@@ -18,25 +18,25 @@ RSpec.describe StatisticsController, :type => :controller do
 
   end
 
-  describe "GET" do
+  #describe "GET" do
 
-    describe "#sanction_by_state_graph" do
+   # describe "#sanction_by_state_graph" do
+   # 
+   #   it "should work" do
+   #     get :sanction_by_state_graph
+   #     expect( response ).to have_http_status( :success )
+   #   end
 
-      it "should work" do
-        get :sanction_by_state_graph
-        expect( response ).to have_http_status( :success )
-      end
+   # end
 
-    end
+    #describe "#index" do
+    #
+    #  it "should work" do
+    #    get :index
+    #    expect( response ).to have_http_status( :success )
+    #  end
 
-    describe "#index" do
-
-      it "should work" do
-        get :index
-        expect( response ).to have_http_status( :success )
-      end
-
-    end
+    #end
 
     describe "#most_sanctioned_ranking" do
 

@@ -37,14 +37,14 @@ RSpec.describe SessionsHelper, :type => :helper do
 
   end
 
-  describe "#signed_in?" do
+  #describe "#signed_in?" do
 
-    it "expect signout to clear current_user" do
-      sign_in( user )
-      sign_out
-      expect( signed_in? ).to be( false )
-    end
+#    it "expect signout to clear current_user" do
+ #     sign_in( user )
+  #    sign_out
+   #   expect( signed_in? ).to be( false )
+    #end
 
-  end
+ # end
 
 end
